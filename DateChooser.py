@@ -22,7 +22,6 @@ def numblines():
 data = pd.read_csv("DateIdeas.csv")
 Idea = data['Idea']
 cost = data['cost']
-print(cost)
 
 
 
