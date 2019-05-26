@@ -1,37 +1,38 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 16 14:28:33 2019
-
-@author: Josh
-"""
 import random
 import csv
 import wget
 import os.path
+import pandas as pd
 
 def Download_file():
     link_to_data = "https://raw.githubusercontent.com/JWoodbr/JustTheLittleThings/master/DateIdeas.csv"
     wget.download(link_to_data)
 
+def checkupdatefile():
+    if os.path.isfile("DateIdeas.csv"):
+        os.remove('DateIdeas.csv')
+        Download_file()
+    else:
+        Download_file()
+def numblines():
+    file = open("DateIdeas.csv")
+    numline = len(file.readlines())
+    file.close()
+
+data = pd.read_csv("DateIdeas.csv")
+Idea = data['Idea']
+cost = data['cost']
+print(cost)
 
 
-if os.path.isfile("DateIdeas.csv"):
-    os.remove('DateIdeas.csv')
-    Download_file()
-else:
-    Download_file()
 
 
-
-file = open("DateIdeas.csv")
-numline = len(file.readlines())
-file.close()
-
+checkupdatefile()
 with open('DateIdeas.csv') as csv_file:
-    csv_reader = csv.reader(csv_file)
     rows = list(csv_file)
     
 dateIdea = random.randint(1, (numline-1))
+print(dateIdea)
 print((rows[dateIdea]))
 
 
