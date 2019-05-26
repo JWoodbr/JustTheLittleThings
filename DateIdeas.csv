@@ -1,48 +1,51 @@
-﻿Number,Idea
-1,Festivals/ carnivals
-2,Fireworks
-3,Nightclub
-4,Bike ride
-5,Picnic
-6,"Carrabean Gardens - rides and stalls, picnic spot, lake"
-7,City - melbourne star ride? Nice restaurant
-8,Royal Botanic Gardens
-9,"Night at crown : pool , club"
-10,"Lunar Drive In: movies, night with stars"
-11,Watch scary movie
-12,"Beach : umbrella, fish and chips, romantic walk, sunset , kites? - St Kilda Beach"
-13,Dandenong Ranges National Park
-14,Strawberry/ cherry Picking - long walk
-15,Lunar Park
-16,Yarra Valley
-17,Docklands
-18,Port Campbell National Park
-19,"Chelsea ""look out"" spot"
-20,Fitzroy Gardens
-21,Half Moon Bay
-22,Mini Golf
-23,Double dates
-24,Campfire with marshmallows in chelseas backyard
-25,Movies/ cinema
-26,Nature walk
-27,Wilson's Prom day trip
-28,Dog Cafe
-29,Eat in China Bar in Vermont South
-30,Eat at Ying Ying it's a really nice restaurant in Bayswater
-31,Meet in the city after Uni - picnic at Botanic Gardens
-32,Go to beach watch the sunset
-33,Go to city and eat at a restaurant there
-34,Drive In Movies
-35,Chill at my house
-36,Ice Skating
-37,Laser tag
-38,dress up fancy somewhere at some fancy restaurants
-39,Hot springs
-40,Snow
-41,Diamond bay
-42,Escape rooms
-43,Learn fortnite dances
-44,Aura Learning
-45,WiiU game night
-46,3DS Games
-47,livewire park
+﻿Number,Idea,cost
+1,Festivals/carnivals,3
+2,Fireworks,1
+3,Nightclub,1
+4,Bike ride,1
+5,Picnic,1
+6,Carrabean Gardens,2
+7,City Nice restaurant,3
+8,Royal Botanic Gardens,1
+9,Night at crown,3
+10,Lunar Drive In: movies,1
+11,Watch scary movie,1
+12,Beach,1
+13,Dandenong Ranges National Park,1
+14,Strawberry/cherry Picking,2
+15,Lunar Park,3
+16,Yarra Valley,2
+17,Docklands,3
+18,Port Campbell National Park,1
+19,Chelsea look out spot,1
+20,Fitzroy Gardens,1
+21,Half Moon Bay,1
+22,Mini Golf,2
+23,Double dates,2
+24,Campfire with marshmallows in chelseas backyard,1
+25,Movies/cinema,2
+26,Nature walk,1
+27,Wilson's Prom day trip,2
+28,Dog Cafe,1
+29,Eat in China Bar in Vermont South,3
+30,Eat at Ying Ying Bayswater,2
+31,Meet in the city after Uni - picnic at Botanic Gardens,2
+32,Go to beach watch the sunset,1
+33,Go to city and eat at a restaurant there,3
+34,Drive In Movies,1
+35,Chill at my house,1
+36,Ice Skating,2
+37,Laser tag,2
+38,dress up fancy somewhere at some fancy restaurants,3
+39,Hot springs,3
+40,Snow,2
+41,Diamond bay,1
+42,Escape rooms,2
+43,Learn fortnite dances,1
+44,Aura Learning,1
+45,WiiU game night,1
+46,3DS Games,1
+47,livewire park,2
+48,night under the stars,1
+49,melbourne star ride,3
+50,long walk,1
